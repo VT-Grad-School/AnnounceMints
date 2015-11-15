@@ -1,6 +1,14 @@
 angular.module('flapperNews', [])
+.factory('posts', [function(){
+  // service body
+
+
+
+
+}])
     .controller('MainCtrl', [
         '$scope',
+        
         function($scope) {
 
             $scope.incrementUpvotes = function(post) {

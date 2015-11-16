@@ -1,6 +1,6 @@
-angular.module('flapperNews', [])
+angular.module('flapperNews', ['ui.router'])
 
-
+//= require angular-ui-router`
 
 
 .factory('posts', [function(){

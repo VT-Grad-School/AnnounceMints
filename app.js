@@ -1,6 +1,5 @@
 angular.module('flapperNews', ['ui.router'])
 
-//= require angular-ui-router`
 .config([
 
     '$stateProvider',

@@ -13,3 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+.home .col-md-2, .home .col-md-4 {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.home.row {
+  max-height: 92vh;
+  margin-top: -19px;
+  /*overflow-y: hidden;*/
+}
+
+body {
+  overflow: hidden;
+  height: 100%;
+}
+.announcemints .navbar {
+  border-bottom: 4px solid #f60;
+  box-shadow: 0 2px 10px black;
+  border-radius: 0;
+}

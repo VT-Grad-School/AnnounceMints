@@ -1,0 +1,22 @@
+//= depend_on_asset "home.html"
+
+angular.module('Announcemints', ['ui.router'])
+.config([
+
+  '$stateProvider',
+  '$urlRouterProvider',
+  '$locationProvider',
+
+  function($stateProvider, $urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+
+    $stateProvider
+      .state('home', {
+        url: '/',
+        templateUrl: '<%= asset_path("home.html") %>',
+        controller: 'MainCtrl'
+      });
+
+    $urlRouterProvider.otherwise('/');
+  }
+]);

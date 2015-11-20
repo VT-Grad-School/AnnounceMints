@@ -9,10 +9,7 @@ angular.module('Announcemints')
       templateUrl: '<%= asset_path("directives/nav/nav.html") %>',
       link: function ($scope) {
 
-        console.log('linking nav directive');
-
         $scope.isActive = function (path) {
-          console.log($location.path());
           return $location.path() === path;
         };
       },

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :announcements
   resources :calls
   resources :jobs
@@ -61,4 +62,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # need to figure this out
+  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
 end

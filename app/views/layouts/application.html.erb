@@ -13,6 +13,7 @@
 </head>
 <body ng-app="Announcemints" class="announcemints">
   <navigation></navigation>
+  <%= link_to "Sign in with G", user_omniauth_authorize_path(:google_oauth2) %>
   <ui-view></ui-view>
 </body>
 </html>

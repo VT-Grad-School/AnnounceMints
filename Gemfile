@@ -37,9 +37,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 
 gem 'angular_rails_csrf'
 
-gem 'omniauth-google-oauth2'
-gem 'devise_token_auth'
 gem 'devise'
+gem 'devise_token_auth'
+gem 'omniauth-google-oauth2'
 
 
 group :development, :test do

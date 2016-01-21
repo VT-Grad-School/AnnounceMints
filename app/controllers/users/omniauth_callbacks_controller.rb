@@ -11,4 +11,24 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
       redirect_to new_user_registration_url
     end
   end
+
+  def failure
+    render :text => "THINGS ARE BORKED" 
+  end
+
+  def action_missing(provider)
+    # Set up authentication/authorizations here, and distribute tasks
+    # that are provider specific to other methods, leaving only tasks
+    # that work across all providers in this method. 
+    render :text => "THINGS ARE BORKED, catchall" 
+  end
+
+  # def google_oauth2
+  #   render :text => "This works, google_oauth2" 
+  # end
+
+  def passthru
+    render :text => "This works, passthru" 
+  end
+
 end
